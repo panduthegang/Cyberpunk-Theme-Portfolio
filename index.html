@@ -432,47 +432,27 @@
                     </div>
                 </div>
                 <div class="contact-form-container">
-                    <form class="contact-form" id="contactForm">
-                        <div class="form-header">
-                            <i class="fas fa-paper-plane"></i>
-                            <h3>Send Message</h3>
-                        </div>
-                        <div class="form-group">
-                            <div class="input-group">
-                                <input type="text" id="name" required>
-                                <label for="name">Your Name</label>
-                                <span class="input-highlight"></span>
+                    <div class="contact-form">
+                        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                            <p class="hidden">
+                                <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+                            </p>
+                            <input type="hidden" name="form-name" value="contact" />
+                            <div class="form-group">
+                                <input type="text" name="name" required placeholder="Your Name" />
                             </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="input-group">
-                                <input type="email" id="email" required>
-                                <label for="email">Your Email</label>
-                                <span class="input-highlight"></span>
+                            <div class="form-group">
+                                <input type="email" name="email" required placeholder="Your Email" />
                             </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="input-group">
-                                <input type="text" id="subject" required>
-                                <label for="subject">Subject</label>
-                                <span class="input-highlight"></span>
+                            <div class="form-group">
+                                <input type="text" name="subject" required placeholder="Subject" />
                             </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="input-group">
-                                <textarea id="message" required></textarea>
-                                <label for="message">Your Message</label>
-                                <span class="input-highlight"></span>
+                            <div class="form-group">
+                                <textarea name="message" required placeholder="Your Message"></textarea>
                             </div>
-                        </div>
-                        <button type="submit" class="submit-btn">
-                            <span class="btn-content">
-                                <i class="fas fa-paper-plane"></i>
-                                Send Message
-                            </span>
-                            <span class="btn-glitch"></span>
-                        </button>
-                    </form>
+                            <button type="submit" class="neon-button">Send Message</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
