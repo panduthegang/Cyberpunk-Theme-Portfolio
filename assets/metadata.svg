@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Portfolio Metadata -->
+    <title>HarshVerse Portfolio</title>
+    <desc>Professional portfolio showcasing web development, design, and creative projects by HarshVerse</desc>
+    <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                 xmlns:dc="http://purl.org/dc/elements/1.1/"
+                 xmlns:cc="http://creativecommons.org/ns#"
+                 xmlns:og="http://ogp.me/ns#"
+                 xmlns:foaf="http://xmlns.com/foaf/0.1/">
+            <!-- Basic Metadata -->
+            <rdf:Description rdf:about="">
+                <dc:title>HarshVerse - Portfolio</dc:title>
+                <dc:creator>HarshVerse</dc:creator>
+                <dc:date>2024</dc:date>
+                <dc:type>Portfolio</dc:type>
+                <dc:format>text/html</dc:format>
+                <dc:language>en</dc:language>
+                <dc:rights> 2024 HarshVerse. All rights reserved.</dc:rights>
+
+                <!-- Portfolio Specific -->
+                <dc:subject>Web Development, Frontend Development, UI/UX Design, Creative Projects</dc:subject>
+                <dc:description>A showcase of professional work including web development projects, UI/UX designs, and creative solutions.</dc:description>
+
+                <!-- Skills and Technologies -->
+                <dc:relation>HTML5, CSS3, JavaScript, React, Node.js, UI/UX Design</dc:relation>
+
+                <!-- Social and Professional Links -->
+                <foaf:homepage>https://harshverse.com</foaf:homepage>
+                <foaf:workplaceHomepage>https://github.com/harshverse</foaf:workplaceHomepage>
+
+                <!-- Open Graph Metadata -->
+                <og:title>HarshVerse Portfolio</og:title>
+                <og:type>website</og:type>
+                <og:image>assets/logo.svg</og:image>
+                <og:description>Professional portfolio showcasing web development and design projects</og:description>
+
+                <!-- Additional SEO Keywords -->
+                <dc:coverage>Web Development, Frontend Development, UI/UX Design, Portfolio, Projects, Creative Work, Professional Portfolio, Developer Portfolio, Design Portfolio, HarshVerse</dc:coverage>
+
+                <!-- Contact Information -->
+                <foaf:mbox_sha1sum>contact@harshverse.com</foaf:mbox_sha1sum>
+
+                <!-- Portfolio Categories -->
+                <dc:type rdf:resource="projects">Web Development Projects</dc:type>
+                <dc:type rdf:resource="designs">UI/UX Designs</dc:type>
+                <dc:type rdf:resource="creative">Creative Works</dc:type>
+
+                <!-- Technical Skills -->
+                <dc:subject rdf:resource="skills">
+                    Frontend Development,
+                    Responsive Design,
+                    Web Applications,
+                    UI/UX Design,
+                    Modern Web Technologies,
+                    Cross-browser Compatibility,
+                    Performance Optimization
+                </dc:subject>
+            </rdf:Description>
+        </rdf:RDF>
+    </metadata>
+
+    <!-- Visual Elements -->
+    <defs>
+        <linearGradient id="iconGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#2a9d8f" />
+            <stop offset="100%" style="stop-color:#264653" />
+        </linearGradient>
+    </defs>
+
+    <!-- Background -->
+    <rect width="32" height="32" rx="8" fill="url(#iconGradient)"/>
+
+    <!-- Letter H -->
+    <path d="M8,6 L8,26 M8,16 L24,16 M24,6 L24,26" 
+          stroke="#e9c46a" 
+          stroke-width="3" 
+          stroke-linecap="round" 
+          fill="none"/>
+</svg>

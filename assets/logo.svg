@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="80" viewBox="0 0 200 80" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background glow effect -->
+    <defs>
+        <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur stdDeviation="2" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+        <linearGradient id="neonGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#0ff;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#0af;stop-opacity:1" />
+        </linearGradient>
+    </defs>
+
+    <!-- Decorative elements -->
+    <path d="M10,40 L30,20 L170,20 L190,40 L170,60 L30,60 L10,40" 
+          fill="none" 
+          stroke="url(#neonGradient)" 
+          stroke-width="2"
+          filter="url(#glow)"
+          opacity="0.3" />
+
+    <!-- H Letter -->
+    <g transform="translate(40,25)" filter="url(#glow)">
+        <path d="M0,0 L0,30 M0,15 L20,15 M20,0 L20,30" 
+              stroke="url(#neonGradient)" 
+              stroke-width="4" 
+              fill="none" />
+        <!-- Glitch effect -->
+        <path d="M0,0 L0,30" 
+              stroke="#f0f" 
+              stroke-width="2" 
+              fill="none" 
+              opacity="0.5"
+              transform="translate(1,1)" />
+    </g>
+
+    <!-- R Letter -->
+    <g transform="translate(70,25)" filter="url(#glow)">
+        <path d="M0,0 L0,30 M0,0 L20,0 Q25,0 25,5 L25,12 Q25,17 20,17 L0,17 M20,17 L25,30" 
+              stroke="url(#neonGradient)" 
+              stroke-width="4" 
+              fill="none" />
+        <!-- Glitch effect -->
+        <path d="M0,0 L0,30" 
+              stroke="#f0f" 
+              stroke-width="2" 
+              fill="none" 
+              opacity="0.5"
+              transform="translate(1,1)" />
+    </g>
+
+    <!-- Circuit lines -->
+    <g stroke="url(#neonGradient)" stroke-width="1" opacity="0.5">
+        <path d="M5,40 L0,40" />
+        <path d="M195,40 L200,40" />
+        <path d="M100,5 L100,0" />
+        <path d="M100,75 L100,80" />
+    </g>
+
+    <style>
+        @keyframes glitch {
+            0% { transform: translate(0, 0); }
+            20% { transform: translate(-2px, 2px); }
+            40% { transform: translate(2px, -2px); }
+            60% { transform: translate(-2px, -2px); }
+            80% { transform: translate(2px, 2px); }
+            100% { transform: translate(0, 0); }
+        }
+        #glitchEffect {
+            animation: glitch 2s infinite;
+        }
+    </style>
+</svg>
